@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e6f2ff;
+}
+
+h1 {
+    color: #003366;
+}
+
+#aviao {
+    width: 60px;
+    margin: 20px;
+}
+
+.painel {
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.botoes button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
