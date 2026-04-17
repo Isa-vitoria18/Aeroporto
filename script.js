@@ -1,34 +1,31 @@
-// Criando a classe Voo
-class Voo {
+class VooSeguro {
+    #codigo;
+    #combustivel;
 
-    // O constructor é executado quando criamos um objeto
-    constructor(codigo, origem, destino, horario) {
-        this.codigo = codigo;
-        this.origem = origem;
-        this.destino = destino;
-        this.horario = horario;
-        this.status = "Em solo"; // status inicial
-    }
-
-    // Método para decolar
-    decolar() {
-        this.status = "Decolando";
-        console.log("O voo está decolando...");
-        this.atualizarStatus();
-    }
-
-    // Método para atualizar informações na tela
-    atualizarStatus() {
-        document.getElementById("codigo").textContent = this.codigo;
-        document.getElementById("origem").textContent = this.origem;
-        document.getElementById("destino").textContent = this.destino;
-        document.getElementById("horario").textContent = this.horario;
-        document.getElementById("status").textContent = this.status;
+    constructor(codigoPassado) {
+        this.#codigo = codigoPassado;
+        this.#combustivel = 100;
     }
 }
+getlerCombustivel();
+return `O tanque do voo ${this.#codigo} está em ${this.#combustivel}%`;
 
-// Criando um objeto (instância) da classe
-const voo = new Voo("AZ123", "São Paulo", "Rio de Janeiro", "14:30");
+setabastecer(quantidade);
+if (quantidade < 0) {
+    console.log("Erro de segurança: Não é possível tirar combustível!");
+} else if (this.#combustivel + quantidade > 100) {
+    console.log("Erro: O tanque vai transbordar! Limite é 100%.");
+} else {
+    this.#combustivel += quantidade;
+    console.log(`Abastecimento concluído. Novo nível: ${this.#combustivel}%`);
+}
 
-// Atualiza a tela quando a página carrega
-voo.atualizarStatus();
+let vooVip = new VooSeguro("VIP-001");
+
+vooVip, this.#combustivel = 0;
+
+vooVip.abastecer = -50;
+
+vooVip.abastecer = 0;
+
+console.log(vooVip.lerCombustivel);
